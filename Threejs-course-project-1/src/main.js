@@ -1,4 +1,3 @@
-import * as THREE from 'https://unpkg.com/three@0.160.0/build/three.module.js';
 
 // // import * as THREE from 'three';
 // import * as THREE from './node_modules/three/build/three.module.js';
@@ -7,6 +6,8 @@ import * as THREE from 'https://unpkg.com/three@0.160.0/build/three.module.js';
 // console.log(THREE);
 
 // Initialising the " SCENE "
+
+import * as THREE from 'https://unpkg.com/three@0.160.0/build/three.module.js';
 
 const scene = new THREE.Scene(); //scene variable defined
 
