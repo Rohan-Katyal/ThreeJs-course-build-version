@@ -102,13 +102,24 @@ console.log(scene); // Now the cubeMesh is the children of scene.
 
 // Initialising the Camera
 
-const camera = new THREE.PerspectiveCamera(
-    100, // FOV
-    window.innerWidth/window.innerHeight, // Aspect Ratio
-    0.5,// Nearest distance limit
-    200 // Farthest distance limit
-)
+// const camera = new THREE.PerspectiveCamera(
+//     100, // FOV
+//     window.innerWidth/window.innerHeight, // Aspect Ratio
+//     0.5,// Nearest distance limit
+//     200 // Farthest distance limit
+// )
 
+
+const aspectRatio = window.innerWidth/window.innerHeight;
+
+const camera = new THREE.OrthographicCamera(
+    -1 * aspectRatio,
+    1 * aspectRatio,
+    1,
+    -1,
+    0.1,
+    200
+)
 // FOV => The Feild of view upto which the camera can see inside a scene,
 // we actually give the FOV angle as the argument, which eventually decides the FOV of the camera itself,
 // that upto how much wider or farther disstance a camera will see and display,
