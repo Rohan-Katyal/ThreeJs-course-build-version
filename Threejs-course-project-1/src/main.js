@@ -1,8 +1,8 @@
-// import * as THREE from 'three';
-import * as THREE from './node_modules/three/build/three.module.js';
-import {OrbitControls} from './node_modules/three/addons/controls/OrbitControls.js';
+// // import * as THREE from 'three';
+// import * as THREE from './node_modules/three/build/three.module.js';
+// import {OrbitControls} from './node_modules/three/addons/controls/OrbitControls.js';
 // initialising three.js => done
-console.log(THREE);
+// console.log(THREE);
 
 // Initialising the " SCENE "
 
